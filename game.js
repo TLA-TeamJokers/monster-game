@@ -4,6 +4,8 @@
 // - Pridaj metódu 'takeDamage' na prijatie poškodenia a aktualizáciu zdravia
 // - Pridaj metódu 'isAlive', ktorá vracia, či je gladiátor nažive
 
+//commit test
+
 class Gladiator {
     constructor(name, health, attackPower) {
         this.name = name;
