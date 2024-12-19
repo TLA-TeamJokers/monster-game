@@ -54,10 +54,44 @@ class Car {
 
 
 let car1 = new Car("Audi",100,70);
-let car2 = new Car("Seat",100,65);
+let car2 = new Car("Seat",100,35);
 
 console.log(car1);
 console.log(car2);
+
+car1.takeDamage(5);
+car2.takeDamage(2);
+
+console.log(car1);
+console.log(car2);
+
+
+console.log(`Car 1: ${car1.name}, ${car1.health}, ${car1.speed}`);
+console.log(`Car 2: ${car2.name}, ${car2.health}, ${car2.speed}`);
+
+
+console.log(car1);
+console.log(car2);
+
+car1.takeDamage(35);
+car2.takeDamage(22);
+
+console.log(car1);
+console.log(car2);
+
+
+console.log(`Car 1: ${car1.name}, ${car1.health}, ${car1.speed}`);
+console.log(`Car 2: ${car2.name}, ${car2.health}, ${car2.speed}`);
+
+console.log(car1);
+console.log(car2);
+
+car1.takeDamage(60);
+car2.takeDamage(42);
+
+console.log(car1);
+console.log(car2);
+
 
 console.log(`Car 1: ${car1.name}, ${car1.health}, ${car1.speed}`);
 console.log(`Car 2: ${car2.name}, ${car2.health}, ${car2.speed}`);
@@ -69,7 +103,7 @@ while (car1.isAlive() && car2.isAlive()) {
 
 }
 
-if(car1.isAlive() && car2.isAlive()) {
+if(car1.isAlive() || car2.isAlive()) {
     console.log(`${car1.name} is victorious!`);
     console.log(`${car2.name} is victorious!`);
 
